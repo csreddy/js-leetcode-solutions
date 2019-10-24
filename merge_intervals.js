@@ -9,7 +9,7 @@
  * @return {Interval[]}
  */
 var merge = function(intervals) {
-    if(!intervals || intervals.length === 0) [];
+    if(!intervals || intervals.length === 0) return [];
     if(intervals.length === 1) return intervals;
 
     intervals.sort((a, b) => a[0] < b[0] ? -1: 1);
